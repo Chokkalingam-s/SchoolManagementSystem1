@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.carousel-container {
+    position: relative;
+    height: 80vh; 
+}
+
+.carousel-inner {
+    height: 80vh; 
+}
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar{
+    height: 10vh;
+}
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 90%;
+    max-width: 450px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.568);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background:#15959C;
+    text-align: center;
+     }
+.footer-text{
+    color: white;
+    font-size: 1.2em;
+}
