@@ -1,3 +1,7 @@
+<?php
+    include "database.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,12 +25,12 @@
         <h3 class="text-center">Login</h3>
         <form action="#" method="post">
             <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+                <label for="aname" class="form-label">Username</label>
+                <input type="text" class="form-control" id="aname" name="aname" required>
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" required>
+                <label for="apass" class="form-label">Password</label>
+                <input type="password" class="form-control" id="apass" name="apass" required>
             </div>
             <button type="submit" class="btn btn-primary w-100" style="background-color:#15959C">Login</button>
         </form>
