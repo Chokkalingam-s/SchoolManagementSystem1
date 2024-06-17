@@ -1,5 +1,6 @@
 <?php
     include "database.php";
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +24,23 @@
     <!-- Login Form -->
     <div class="login-container">
         <h3 class="text-center">Login</h3>
+
+        <?php
+            if(isset($_POST['login'])){
+
+                $sql = "SELECT * FROM admin WHERE ANAME='{$_POST["aname"]}' AND APASS='{$_POST["apass"]}'";
+                $res = $db->query($sql);
+
+                if($res->num_rows > 0){
+                    $ro=$res->fetch_assoc();
+                    $_SESSION["AID"]=$ro["AID"];
+                    $_SESSION["ANAME"]=$ro["ANAME"];
+                    echo "<script>window.open('admin/index.php','_self')</script>";
+                }else{
+                    echo '<div class="alert alert-danger" role="alert">Invalid Username or Password</div>';
+                }
+            }
+            ?>
         <form action="#" method="post">
             <div class="mb-3">
                 <label for="aname" class="form-label">Username</label>
@@ -32,7 +50,7 @@
                 <label for="apass" class="form-label">Password</label>
                 <input type="password" class="form-control" id="apass" name="apass" required>
             </div>
-            <button type="submit" class="btn btn-primary w-100" style="background-color:#15959C">Login</button>
+            <button type="submit" class="btn btn-primary w-100" name="login" style="background-color:#15959C">Login</button>
         </form>
     </div>
 
