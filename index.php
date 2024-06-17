@@ -26,7 +26,7 @@
         <h3 class="text-center">Login</h3>
 
         <?php
-            if(isset($_POST['login'])){
+            if(isset($_POST["login"])){
 
                 $sql = "SELECT * FROM admin WHERE ANAME='{$_POST["aname"]}' AND APASS='{$_POST["apass"]}'";
                 $res = $db->query($sql);
@@ -35,13 +35,17 @@
                     $ro=$res->fetch_assoc();
                     $_SESSION["AID"]=$ro["AID"];
                     $_SESSION["ANAME"]=$ro["ANAME"];
-                    echo "<script>window.open('admin/index.php','_self')</script>";
+                    echo "<script>window.open('admin/index.php','_self');</script>";
                 }else{
                     echo '<div class="alert alert-danger" role="alert">Invalid Username or Password</div>';
                 }
             }
+            if(isset($_GET["mes"]))
+            {
+                echo "<div class='alert alert-danger' role='alert'>{$_GET["mes"]}</div>";
+            }
             ?>
-        <form action="#" method="post">
+        <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post">
             <div class="mb-3">
                 <label for="aname" class="form-label">Username</label>
                 <input type="text" class="form-control" id="aname" name="aname" required>
