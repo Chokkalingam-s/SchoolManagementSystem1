@@ -3,7 +3,7 @@
 	session_start();
 	if(! isset($_SESSION["AID"]))
 	{
-		echo "<script>window.open('index.php?mes=Access Denied..','_self');</script>";
+		echo "<script>window.open('../index.php?mes=Access Denied..!','_self');</script>";
 		
 	}		
 ?>
@@ -21,5 +21,6 @@
 
     <!-- Navbar -->
    <?php include("../LoginPage/navbar.php"); ?>
+   <button class="btn btn-danger" > <a href="../logout.php">Logout</a> </button>
 </body>
 </html>
