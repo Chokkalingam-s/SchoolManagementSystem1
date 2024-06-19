@@ -2,10 +2,10 @@
     --background: #15959C;
     --navbar-width: 256px;
     --navbar-width-min: 80px;
-    --navbar-dark-primary: #e9fbfc;
+    --navbar-dark-primary: #dff9fb;
     --navbar-dark-secondary: #2c3e50;
     --navbar-light-primary: #f5f6fa;
-    --navbar-light-secondary: #8392a5;
+    --navbar-light-secondary: #6a7584;
   }
   
   .navbar{
@@ -13,6 +13,7 @@
 }
   html, body {
     margin: 0;
+    background-color: #E2F2F3;
   }
   
   #nav-toggle:checked ~ #nav-header {
@@ -127,6 +128,7 @@
     background: var(--navbar-dark-primary);
     border-radius: 99px;
     transition: background 0.2s;
+    
   }
   #nav-toggle-burger:before, #nav-toggle-burger:after {
     content: "";
@@ -134,7 +136,7 @@
     top: -6px;
     width: 10px;
     height: 2px;
-    background: var(--navbar-light-primary);
+    background: rgba(65, 64, 64, 0.716);
     border-radius: 99px;
     transform: translate(2px, 8px) rotate(30deg);
     transition: 0.2s;
