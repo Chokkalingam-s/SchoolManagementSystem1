@@ -103,7 +103,7 @@
                                     <td>{$i}</td>
                                     <td>{$r["CNAME"]}</td>
                                     <td>{$r["CSEC"]}</td>
-                                    <td><a href='delete.php?id={$r["CID"]}' class='btnr'>Delete</a></td>
+                                    <td><a href='delete_class.php?id={$r["CID"]}' class='btnr'>Delete</a></td>
                                 </tr>
                             ";
                         }
