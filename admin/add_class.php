@@ -58,17 +58,19 @@
                     <option value="VIII">VIII</option>
                     <option value="IX">IX</option>
                     <option value="X">X</option>
+                    <option value="X">XI</option>
+                    <option value="X">XII</option>
                 </select><br><br>
                 <label>Section</label><br>
                 <select name="sec" required class="input2">
                     <option value="">Select</option>
-                    <option value="-">-</option>
                     <option value="A">A</option>
                     <option value="B">B</option>
                     <option value="C">C</option>
                     <option value="D">D</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
+                    <option value="SPECIAL">SPECIAL</option>
                 </select>
                 <br>
                 <button type="submit" class="btn" name="submit">Add Class Details</button>
