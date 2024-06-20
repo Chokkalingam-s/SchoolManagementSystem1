@@ -25,6 +25,8 @@
      <div >
     <?php include("../LoginPage/navbar.php"); ?>
     </div>
+    <div id="sidebar">
      <?php include("../sidebar.php"); ?>
+    </div>
 </body>
 </html>
