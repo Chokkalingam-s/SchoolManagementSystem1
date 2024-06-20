@@ -79,8 +79,8 @@
     border: none;
     border-top: solid 1px var(--navbar-dark-secondary);
   }
-  #nav-bar a {
-    color: black;
+  #nav-title {
+    color: #2c3e50;
     text-decoration: inherit;
   }
   #nav-bar input[type=checkbox] {
@@ -202,14 +202,19 @@
     height: 54px;
     display: flex;
     align-items: center;
+    color:#6a7584;
     color: var(--navbar-light-secondary);
     direction: ltr;
     cursor: pointer;
     z-index: 1;
     transition: color 0.2s;
   }
+  a:link a:visited a:hover a:active {
+    color: var(--navbar-light-secondary);
+  }
   .nav-button span {
     transition: opacity 1s;
+    color: var(--navbar-light-secondary);
   }
   .nav-button .fas {
     transition: min-width 0.2s;
@@ -261,6 +266,12 @@
   }
   .nav-button:nth-of-type(8):hover ~ #nav-content-highlight {
     top: 394px;
+  }
+  .nav-button:nth-of-type(9):hover {
+    color: var(--navbar-dark-primary);
+  }
+  .nav-button:nth-of-type(9):hover ~ #nav-content-highlight {
+    top: 448px;
   }
   
   #nav-bar .fas {
