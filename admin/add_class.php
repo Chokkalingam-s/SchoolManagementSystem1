@@ -38,9 +38,11 @@
             if(isset($_POST["submit"])) {
                 $sq="insert into class(CNAME,CSEC) values('{$_POST["cname"]}','{$_POST["sec"]}')";
                 if($db->query($sq)) {
-                    echo "<div class='success'>Insert Success..</div>";
+                    echo "<div class='success' role='alert'>Insert Success..<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button>
+                         </div>";
                 } else {
-                    echo "<div class='error'>Insert failed..</div>";
+                    echo "<div class='error' role='alert'>Insert failed..<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button>
+                         </div>";
                 }
             }
             ?>
@@ -80,7 +82,9 @@
             <h3 style="margin-top:30px;">Class Details</h3><br>
             <?php
             if(isset($_GET["mes"])) {
-                echo"<div class='error'>{$_GET["mes"]}</div>";
+                echo"<div class='error' role='alert'>{$_GET["mes"]}
+                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button>
+                         </div>";
             }
             ?>
             <table class="table">
@@ -116,4 +120,5 @@
         </div>
     </div>
 </body>
+<script src="../js/closeAlert.js"></script>
 </html>

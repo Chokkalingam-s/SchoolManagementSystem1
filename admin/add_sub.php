@@ -77,7 +77,7 @@
 					<?php
 						if(isset($_GET["mes"]))
 						{
-							echo"<div class='error' role'alert'>{$_GET["mes"]} <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button></div>";	
+							echo"<div class='error' role='alert'>{$_GET["mes"]} <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button></div>";	
 						}
 					
 					?>
