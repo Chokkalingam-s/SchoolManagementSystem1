@@ -40,11 +40,14 @@
 								$sq="insert into sub(SNAME) values ('{$_POST["sname"]}')";
 								if($db->query($sq))
 								{
-									echo "<div class='success'>Insert Success..</div>";
+									echo "<div class='success'  role='alert'>Insert Success...
+                                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button>
+                         </div>";
 								}
 								else
 								{
-									echo "<div class='error'>Insert Failed..</div>";
+									echo "<div class='error' role='alert'>Insert Failed...
+                                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button></div>";
 								}
 							}
 						?>
@@ -74,7 +77,7 @@
 					<?php
 						if(isset($_GET["mes"]))
 						{
-							echo"<div class='error'>{$_GET["mes"]}</div>";	
+							echo"<div class='error' role'alert'>{$_GET["mes"]} <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button></div>";	
 						}
 					
 					?>
@@ -118,4 +121,16 @@
 			</div>
     </div>
 </body>
+<script>
+    function closeAlert(button) {
+        var alert = button.parentElement; 
+        if (alert) {
+            alert.classList.add('fadeOut');
+            setTimeout(function() {
+                alert.remove();
+            }, 500); 
+        }
+    }
+</script>
+
 </html>
