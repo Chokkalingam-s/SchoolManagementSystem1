@@ -14,13 +14,13 @@
      <a href="index.php" class="nav-button" ><i class="fas fa-palette"></i><span>School Information</span></a>
     <a href="add_class.php" class="nav-button" ><i class="fas fa-images"></i><span>Class</span></a>
     <a href="add_sub.php" class="nav-button" ><i class="fas fa-thumbtack"></i><span>Subject</span></a>
-    <a href="add_staff.php" class="nav-button" style="color:#6a7584;"><i class="fas fa-heart"></i><span>Staff</span></a>
-    <a href="view_staff.php" class="nav-button" style="color:#6a7584;"><i class="fas fa-chart-line"></i><span>View Staff</span></a>
-    <a href="set_exam.php" class="nav-button" style="color:#6a7584;"> <i class="fas fa-fire"></i><span>Set Exam</span></a>
-     <a href="view_exam.php" class="nav-button" style="color:#6a7584;"><i class="fas fa-magic"></i><span>View Exam</span></a>
-    <a href="student.php"target="_blank" class="nav-button" style="color:#6a7584;"><i class="fas fa-magic"></i><span>View Student</span></a>
+    <a href="add_staff.php" class="nav-button" ><i class="fas fa-heart"></i><span>Staff</span></a>
+    <a href="view_staff.php" class="nav-button" ><i class="fas fa-chart-line"></i><span>View Staff</span></a>
+    <a href="set_exam.php" class="nav-button" > <i class="fas fa-fire"></i><span>Set Exam</span></a>
+     <a href="view_exam.php" class="nav-button" ><i class="fas fa-magic"></i><span>View Exam</span></a>
+    <a href="student.php" class="nav-button" ><i class="fas fa-magic"></i><span>View Student</span></a>
     <hr/>
-    <a href="../logout.php" class="nav-button" style="color:#2c3e50;"><i class="fas fa-gem"></i><span>Logout</span></a>
+    <a href="../logout.php" class="nav-button" ><i class="fas fa-gem"></i><span>Logout</span></a>
     <div id="nav-content-highlight"></div>
   </div>		
 		';

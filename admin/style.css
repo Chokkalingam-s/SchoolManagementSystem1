@@ -231,7 +231,7 @@ label[for=nav-toggle] {
   text-decoration: none;
 }
 a:link a:visited a:hover a:active {
-  color: var(--navbar-light-secondary); text-decoration: none;
+  color: var(--navbar-light-secondary);
 }
 .nav-button span {
   transition: opacity 1s;
