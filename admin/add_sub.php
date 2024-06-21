@@ -99,7 +99,7 @@
 										<tr>
 										<td>{$i}</td>
 										<td>{$r["SNAME"]}</td>
-										<td><a href='sub_delete.php?id={$r["SID"]}' class='btnr'>Delete</a></td>
+										<td><a href='del_sub.php?id={$r["SID"]}' class='btnr'>Delete</a></td>
 										</tr>
 									
 									";
