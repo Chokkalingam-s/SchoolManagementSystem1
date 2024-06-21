@@ -10,16 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Management System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-   <?php include("LoginPage/navbar.php"); ?>
+    <?php include("LoginPage/navbar.php"); ?>
 
     <!-- Carousel -->
-    <?php include("LoginPage/carousel.php"); ?>
+    <div class="carousel-container">
+        <?php include("LoginPage/carousel.php"); ?>
+    </div>
 
     <!-- Login Form -->
     <div class="login-container">
@@ -27,10 +28,8 @@
 
         <?php
             if(isset($_POST["login"])){
-
                 $sql = "SELECT * FROM admin WHERE ANAME='{$_POST["aname"]}' AND APASS='{$_POST["apass"]}'";
                 $res = $db->query($sql);
-
                 if($res->num_rows > 0){
                     $ro=$res->fetch_assoc();
                     $_SESSION["AID"]=$ro["AID"];
@@ -44,7 +43,7 @@
             {
                 echo "<div class='alert alert-danger' role='alert'>{$_GET["mes"]}</div>";
             }
-            ?>
+        ?>
         <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post">
             <div class="mb-3">
                 <label for="aname" class="form-label">Username</label>
@@ -58,6 +57,7 @@
         </form>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p class="footer-text">&copy; Chokkalingam'S School Management System</p>

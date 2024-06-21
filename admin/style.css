@@ -31,7 +31,6 @@ body {
 }
 
 
-
 .navbar{
   height: var(--navbar-height);
 }
@@ -380,6 +379,18 @@ a:link a:visited a:hover a:active {
 }
 
 /* Forms */
+.input1 {
+    width: 30%;
+    padding: 0.75rem; /* Adjusted padding */
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+
 input.input2,
 select.input2 {
     width: 100%;

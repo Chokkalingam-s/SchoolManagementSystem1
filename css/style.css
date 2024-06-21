@@ -1,23 +1,31 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
 }
+
 .carousel-container {
     position: relative;
-    height: 80vh; 
+    margin-top: 10vh; /* Ensure carousel starts below navbar */
 }
 
 .carousel-inner {
-    height: 80vh; 
+    height: 70vh; /* Adjusted to fit below the navbar */
 }
+
 .carousel-inner img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.navbar{
+.navbar {
     height: 10vh;
 }
+
 .login-container {
     position: absolute;
     top: 50%;
@@ -32,19 +40,24 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .login-container h3 {
     margin-bottom: 15px;
     text-align: center;
 }
+
+/* Footer styling */
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 10vh;
-    background:#15959C;
+    background: #15959C;
     text-align: center;
-     }
-.footer-text{
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-text {
     color: white;
     font-size: 1.2em;
 }

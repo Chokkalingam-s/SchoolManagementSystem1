@@ -23,7 +23,7 @@
 <body>
 
     <!-- Navbar -->
-    <div>
+    <div  style="position: fixed;  width:100%;z-index: 10;">
         <?php include("../LoginPage/navbar.php"); ?>
     </div>
     <div id="sidebar">
