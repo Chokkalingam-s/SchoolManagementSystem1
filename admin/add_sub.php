@@ -54,17 +54,7 @@
 						
 						<form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
 						   <label>Subject Name</label><br>
-						   <input type="text" class="input1" name="sname" required style=" width: 30%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: 'Arial', sans-serif; 
-     border-color: #15959C;
-    outline: none;
-    box-shadow: 0 0 5px rgba(21, 149, 156, 0.5);">
+						   <input type="text" class="input2" name="sname" required style=" width: 30%;">
 						   <button type="submit" class="btn" name="submit">Add Subject Details</button>
 						</form>
 				

@@ -11,9 +11,9 @@
 	{
 		echo'
       <div id="nav-content" >
-     <a href="index.php" class="nav-button" style="color:#6a7584;" ><i class="fas fa-palette"></i><span>School Information</span></a>
-    <a href="add_class.php" class="nav-button" style="color:#6a7584;"><i class="fas fa-images"></i><span>Class</span></a>
-    <a href="add_sub.php" class="nav-button" style="color:#6a7584;"><i class="fas fa-thumbtack"></i><span>Subject</span></a>
+     <a href="index.php" class="nav-button" ><i class="fas fa-palette"></i><span>School Information</span></a>
+    <a href="add_class.php" class="nav-button" ><i class="fas fa-images"></i><span>Class</span></a>
+    <a href="add_sub.php" class="nav-button" ><i class="fas fa-thumbtack"></i><span>Subject</span></a>
     <a href="add_staff.php" class="nav-button" style="color:#6a7584;"><i class="fas fa-heart"></i><span>Staff</span></a>
     <a href="view_staff.php" class="nav-button" style="color:#6a7584;"><i class="fas fa-chart-line"></i><span>View Staff</span></a>
     <a href="set_exam.php" class="nav-button" style="color:#6a7584;"> <i class="fas fa-fire"></i><span>Set Exam</span></a>

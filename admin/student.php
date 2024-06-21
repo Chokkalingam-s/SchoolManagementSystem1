@@ -37,7 +37,7 @@
 					<form  method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
 					<div class="lbox1">	
 						<label>Class</label><br>
-					<select name="cla" required class="input3">
+					<select name="cla" required class="input2" style="width:40%;">
 				
 						<?php 
 							 $sl="SELECT DISTINCT(CNAME) FROM class";
@@ -58,7 +58,7 @@
 				</div>
 				<div class="rbox">
 					<label>Section</label><br>
-						<select name="sec" required class="input3">
+						<select name="sec" required class="input2" style="width:40%;">
 				
 						<?php 
 							 $sql="SELECT DISTINCT(CSEC) FROM class";
