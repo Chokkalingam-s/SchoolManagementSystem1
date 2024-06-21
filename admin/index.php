@@ -1,11 +1,11 @@
 <?php
 	include "../database.php";
 	session_start();
-	if(! isset($_SESSION["AID"]))
+	if(!isset($_SESSION["AID"]))
 	{
-		echo "<script>window.open('../index.php?mes=Access Denied..!','_self');</script>";
+		echo"<script>window.open('index.php?mes=Access Denied...','_self');</script>";
 		
-	}		
+	}	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,16 +18,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sidebar.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
-    <div class="NavbarStyle">
-    <?php include("../LoginPage/navbar.php"); ?>
+    <div  style="position: fixed;  width:100%;z-index: 10;">
+        <?php include("../LoginPage/navbar.php"); ?>
     </div>
     <div id="sidebar">
-     <?php include("../sidebar.php"); ?>
+        <?php include("../sidebar.php"); ?>
+    </div>
+    <div class="section">
+
+        <h3 class="text">Welcome <?php echo $_SESSION["ANAME"]; ?></h3><hr><br>
+        <div class="content1">
+            
+        </div>
+       
     </div>
 </body>
+<script src="../js/closeAlert.js"></script>
 </html>
