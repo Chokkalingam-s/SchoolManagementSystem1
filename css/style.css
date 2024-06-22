@@ -9,7 +9,7 @@ body {
 
 .carousel-container {
     position: relative;
-    margin-top: 10vh; /* Ensure carousel starts below navbar */
+    /* margin-top: 10vh; */ /* Ensure carousel starts below navbar */
 }
 
 .carousel-inner {

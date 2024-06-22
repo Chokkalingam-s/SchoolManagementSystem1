@@ -30,7 +30,7 @@
 	else{
 		echo'
      <div id="nav-content" >
-     <a href="index.php" class="nav-button" ><i class="fas fa-school"></i><span>Profile</span></a>
+     <a href="Teacher_index.php" class="nav-button" ><i class="fas fa-school"></i><span>Profile</span></a>
     <a href="handle_class.php" class="nav-button" ><i class="fas fa-users"></i><span>HandledClass</span></a>
     <a href="add_stud.php" class="nav-button" ><i class="fas fa-book"></i><span>Students</span></a>
     <a href="view_stud_tech.php" class="nav-button" ><i class="fas fa-user-check"></i><span>View Student</span></a>

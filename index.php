@@ -15,13 +15,13 @@
 <body>
 
     <!-- Navbar -->
+     <div>
     <?php include("LoginPage/navbar.php"); ?>
-
+    </div>
     <!-- Carousel -->
-    <div class="carousel-container">
+     <div>
         <?php include("LoginPage/carousel.php"); ?>
     </div>
-
     <!-- Login Form -->
     <div class="login-container">
         <h3 class="text-center">Login</h3>
