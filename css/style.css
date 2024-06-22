@@ -1,15 +1,13 @@
-/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    min-height: 100vh; 
 }
 
 .carousel-container {
     position: relative;
-    /* margin-top: 10vh; */ /* Ensure carousel starts below navbar */
 }
 
 .carousel-inner {
@@ -49,7 +47,6 @@ body {
     text-align: center;
 }
 
-/* Footer styling */
 footer {
     display: flex;
     align-items: center;
@@ -57,7 +54,7 @@ footer {
     height: 10vh;
     background: #15959C;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto;
 }
 
 .footer-text {
