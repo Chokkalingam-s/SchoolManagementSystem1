@@ -41,11 +41,13 @@
                                 $sq="insert into staff(TNAME,TPASS,QUAL,SAL) values('{$_POST["sname"]}',1234,'{$_POST["qual"]}','{$_POST["sal"]}')";
                                 if($db->query($sq))
                                 {
-                                    echo "<div class='success'>Insert Success..</div>";
+                                    echo "<div class='success'>Insert Success...
+                                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button></div>";
                                 }
                                 else
                                 {
-                                    echo "<div class='error'>Insert Failed..</div>";
+                                    echo "<div class='error'>Insert Failed... 
+                                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button></div>";
                                 }
                                 
                             }
@@ -62,7 +64,11 @@
                              <input type="text" name="sal" required class="input2" style=" width: 65%;">
                              <br><br>
                              <button type="submit" class="btn" name="submit">Add Staff Details</button>
+                            
+                             <a href="view_staff.php" style="text-decoration:none;color: inherit; "><button type="button" class="btn" name="view_staff" style="opacity: 0.8;">View Staff Details</button></a>
+                            
                         </form>
+                        
            
             
         </div>
