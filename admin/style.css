@@ -1,6 +1,6 @@
 :root {
   --background: #15959C;
-  --navbar-width: 256px;
+  --navbar-width: 150px;
   --navbar-width-min: 80px;
   --navbar-dark-primary: #dff9fb;
   --navbar-dark-secondary: #2c3e50;
@@ -78,7 +78,7 @@ body {
 
 #nav-bar {
   position: fixed;
-  width: auto;
+  width:auto;
   left: auto;
   top: auto;
   height: calc(90vh);
