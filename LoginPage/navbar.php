@@ -30,7 +30,7 @@
 					
 					<li class="nav-item"><a class="nav-link" href="index.php">Admin</a></li>
 				<li class="nav-item"><a class="nav-link" href="teacher_login.php">Teacher</a></li>
-				<li class="nav-item"><a class="nav-link"  href="#">Contact Us</a></li>';
+				<li class="nav-item"><a class="nav-link"  href="ContactUs.php">Contact Us</a></li>';
 				}
 			?>
                 </ul>
