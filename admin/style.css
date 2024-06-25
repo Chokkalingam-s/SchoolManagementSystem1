@@ -1,13 +1,13 @@
 :root {
   --background: #15959C;
-  --navbar-width: 150px;
+  --navbar-width: auto;
   --navbar-width-min: 80px;
   --navbar-dark-primary: #dff9fb;
   --navbar-dark-secondary: #2c3e50;
   --navbar-light-primary: #f5f6fa;
   --navbar-light-secondary: #6a7584;
  
-  --sidebar-width: 15vw; /* Adjusted for responsive width */
+  --sidebar-width: 13vw; /* Adjusted for responsive width */
   --navbar-height: 10vh;
   --content-padding: 1rem;
   --gap: 4rem; /* Gap between sidebar and section */
@@ -35,6 +35,10 @@ body {
   height: var(--navbar-height);
 }
 
+/* sidebar css */
+#nav-toggle:checked ~ #nav-bar {
+  width: calc(20%);
+}
 #nav-toggle:checked ~ #nav-header {
   width: calc(var(--navbar-width-min) - 16px);
 }
@@ -78,7 +82,7 @@ body {
 
 #nav-bar {
   position: fixed;
-  width:auto;
+  width: auto;
   left: auto;
   top: auto;
   height: calc(90vh);
@@ -317,6 +321,7 @@ a:link a:visited a:hover a:active {
     padding-top: var(--navbar-height); /* Padding to align content below navbar */
     z-index: 1; /* Ensure it stays below the navbar */
 }
+/* sidebar css ends*/
 
 /* Section styles */
 .section {

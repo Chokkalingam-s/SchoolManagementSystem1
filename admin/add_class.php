@@ -60,8 +60,8 @@
                     <option value="VIII">VIII</option>
                     <option value="IX">IX</option>
                     <option value="X">X</option>
-                    <option value="X">XI</option>
-                    <option value="X">XII</option>
+                    <option value="XI">XI</option>
+                    <option value="XII">XII</option>
                 </select><br><br>
                 <label>Section</label><br>
                 <select name="sec" required class="input2">
