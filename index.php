@@ -24,7 +24,7 @@
     </div>
     <!-- Login Form -->
     <div class="login-container">
-        <h3 class="text-center">Login</h3>
+        <h3 class="text-center">Admin Login</h3>
 
         <?php
             if(isset($_POST["login"])){
@@ -36,12 +36,12 @@
                     $_SESSION["ANAME"]=$ro["ANAME"];
                     echo "<script>window.open('admin/index.php','_self');</script>";
                 }else{
-                    echo '<div class="alert alert-danger" role="alert">Invalid Username or Password</div>';
+                    echo '<div class="alert alert-danger" role="alert">Invalid Username or Password...!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="closeAlert(this)"></button></div>';
                 }
             }
             if(isset($_GET["mes"]))
             {
-                echo "<div class='alert alert-danger' role='alert'>{$_GET["mes"]}</div>";
+                echo "<div class='alert alert-danger' role='alert'>{$_GET["mes"]}<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button></div>";
             }
         ?>
         <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post">
@@ -64,7 +64,7 @@
         </div>
     </footer>
     <script src="js/jquery.js"></script>
-
+    <script src="../js/closeAlert.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

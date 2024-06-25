@@ -3,9 +3,17 @@
 	session_start();
 	if(!isset($_SESSION["TID"]))
 	{
-		echo"<script>window.open('index.php?mes=Access Denied...','_self');</script>";
+		echo"<script>window.open('teacher_login.php?mes=Access Denied...','_self');</script>";
 		
 	}	
+
+    $sql="SELECT * FROM staff WHERE TID={$_SESSION["TID"]}";
+		$res=$db->query($sql);
+
+		if($res->num_rows>0)
+		{
+			$row=$res->fetch_assoc();
+		}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,9 +39,13 @@
     </div>
     <div class="section">
 
-        <h3 class="text">Welcome <?php echo $_SESSION["ANAME"]; ?></h3><hr><br>
+        <h3 class="text">Welcome <?php echo $_SESSION["TNAME"]; ?></h3><hr><br>
      
         <div class="content1">
+          
+                <h4>Profile</h4>
+                <p>Name: <?php echo $row["TNAME"]; ?></p>
+                
         </div>
        
     </div>

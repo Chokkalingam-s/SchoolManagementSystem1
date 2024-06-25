@@ -61,3 +61,20 @@ footer {
     color: white;
     font-size: 1.2em;
 }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        width: 100%; /* Start with full width */
+    }
+    100% {
+        opacity: 0;
+        width: 0; /* Reduce width to zero */
+    }
+  }
+  
+  .fadeOut {
+    animation: fadeOut 0.5s ease forwards;
+  }
+
+ 

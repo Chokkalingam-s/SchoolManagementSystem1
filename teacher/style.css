@@ -36,37 +36,6 @@ body {
   height: var(--navbar-height);
 }
 
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  
-}
-.info-card {
-  background-color: #65b9bde0;
-  width: 48%;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-.info-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 10px auto;
-  background-color: #15959C;
-  color: white;
-  font-size: 2rem;
-  border-radius: 50%;
-}
-.info-text {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-}
 
 /* sidebar css */
 #nav-toggle:checked ~ #nav-bar {

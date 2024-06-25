@@ -21,8 +21,8 @@
 					echo'
 				
 						<li class="nav-item"><a class="nav-link" href="index.php">Teacher Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="teacher_change_pass.php">Settings</a></li>
-				<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+				<li class="nav-item"><a class="nav-link" href="../logout.php">Logout</a></li>
 					';
 				}
 				else{
@@ -30,7 +30,7 @@
 					
 					<li class="nav-item"><a class="nav-link" href="index.php">Admin</a></li>
 				<li class="nav-item"><a class="nav-link" href="teacher_login.php">Teacher</a></li>
-				<li class="nav-item"><a class="nav-link"  href="contact.php">Contact Us</a></li>';
+				<li class="nav-item"><a class="nav-link"  href="#">Contact Us</a></li>';
 				}
 			?>
                 </ul>

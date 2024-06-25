@@ -48,7 +48,6 @@
        
     </div>
 </body>
-<script src="../js/closeAlert.js"></script>
 <script src="../js/countData.js"></script>
 
 </html>
