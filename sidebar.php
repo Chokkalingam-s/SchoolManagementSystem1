@@ -18,7 +18,7 @@
     <a href="view_staff.php" class="nav-button" ><i class="fas fa-user-tie"></i><span>View Staff</span></a>
     <a href="set_exam.php" class="nav-button" > <i class="fas fa-calendar-plus"></i><span>Set Exam</span></a>
      <a href="view_exam.php" class="nav-button" ><i class="fas fa-calendar-check"></i><span>View Exam</span></a>
-    <a href="student.php" class="nav-button" ><i class="fas fa-user-graduate"></i><span>View Student</span></a>
+    <a href="view_student.php" class="nav-button" ><i class="fas fa-user-graduate"></i><span>View Student</span></a>
     <hr/>
     <a href="../logout.php" class="nav-button" ><i class="fas fa-lock"></i><span>Logout</span></a>
     <div id="nav-content-highlight"></div>
