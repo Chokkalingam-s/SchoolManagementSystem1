@@ -42,12 +42,8 @@
         <h3 class="text">Welcome <?php echo $_SESSION["TNAME"]; ?></h3><hr><br>
      
         <div class="content">
-
-              <div class="rbox1">
-                <h3> Profile</h3><br>
-
                     <table class="table">
-                        <tr><td colspan="2"><img src="<?php echo $row["IMG"] ?>" height="100" width="100" alt="Kindly Upload Your Photo (Scroll)"></td></tr>
+                        <tr><td colspan="2"><img src="<?php echo $row["IMG"] ?>" height="100" width="100" alt="Kindly Upload Your Photo (Update Profile/ Refresh Once)"></td></tr>
                         <tr><th>Name </th> <td><?php echo $row["TNAME"] ?> </td></tr>
                         <tr><th>Qualification </th> <td><?php echo $row["QUAL"] ?>  </td></tr>
                         <tr><th>Salary </th> <td> <?php echo $row["SAL"] ?>  </td></tr>
@@ -55,7 +51,7 @@
                         <tr><th>E - Mail </th> <td> <?php echo $row["MAIL"] ?> </td></tr>
                         <tr><th>Address </th> <td> <?php echo $row["PADDR"] ?> </td></tr>
                     </table>
-                </div>
+                
 				
                 <h3>Update Profile</h3><br>
                 <div class="lbox1">
@@ -69,20 +65,21 @@
                         {
                             $sql="update staff set PNO='{$_POST["pno"]}',MAIL='{$_POST["mail"]}',PADDR='{$_POST["addr"]}',IMG='{$target_file}'where TID={$_SESSION["TID"]}";
                             $db->query($sql);
-                            echo "<div class='success'>Insert Success</div>";
+                            echo "<div class='success'>Profile Updated<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close' onclick='closeAlert(this)'></button> </div>";
                         }
+
                         
                     }
                 ?>
                 <form  enctype="multipart/form-data" role="form"  method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
                         <label>  Phone No</label><br>
-                        <input type="text" maxlength="10" required class="input2" name="pno"><br><br>
+                        <input type="text" maxlength="10" required class="input2" name="pno"><br>
                         <label>  E - Mail</label><br>
-                        <input type="email"  class="input2" required name="mail"><br><br>
+                        <input type="email"  class="input2" required name="mail"><br>
                         <label>  Address</label><br>
-                        <textarea rows="5" name="addr" ></textarea><br><br>
+                        <textarea rows="4" name="addr" style="overflow: auto; resize: none;" ></textarea><br>
                         <label> Image</label><br>
-                        <input type="file"  class="input2" required name="img"><br><br>
+                        <input type="file"  class="input2" required name="img"><br>
                     <button type="submit" class="btn" name="submit">Add Profile Details</button>
                     </form>
                 </div>
@@ -90,4 +87,5 @@
        
     </div>
 </body>
+<script src="../js/closeAlert.js"></script>
 </html>

@@ -414,6 +414,23 @@ select.input2:focus {
     box-shadow: 0 0 5px rgba(21, 149, 156, 0.5);
 }
 
+textarea {
+    width: 100%;
+    padding: 0.75rem; /* Adjusted padding */
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+
+}
+textarea:focus {
+    border-color: #15959C;
+    outline: none;
+    box-shadow: 0 0 5px rgba(21, 149, 156, 0.5);
+}
+
 /* Buttons */
 .btn {
     background-color: #15959C;
