@@ -11,6 +11,7 @@
   --navbar-height: 10vh;
   --content-padding: 1rem;
   --gap: 4rem; /* Gap between sidebar and section */
+  --navbar-width-collapsed: 70px;
 }
 
 html, body {
@@ -514,3 +515,30 @@ select.input2:focus {
         padding: var(--content-padding);
     }
 }
+
+@media (max-width: 1250px) {
+  #nav-bar {
+      width: var(--navbar-width-collapsed);
+  }
+
+  #nav-bar.collapsed {
+      width: var(--navbar-width-collapsed);
+  }
+  #nav-header, #nav-title {
+    display: none;
+}
+
+  .nav-button span {
+      display: none;
+  }
+
+  .nav-button .fas {
+      text-align: center;
+  }
+
+  .section {
+      margin-left: var(--navbar-width-collapsed);
+  }
+
+}
+

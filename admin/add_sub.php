@@ -54,7 +54,7 @@
 						
 						<form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
 						   <label>Subject Name</label><br>
-						   <input type="text" class="input2" name="sname" required style=" width: 30%;">
+						   <input type="text" class="input2" name="sname" required style=" width: 45%;">
 						   <button type="submit" class="btn" name="submit">Add Subject Details</button>
 						</form>
 				
