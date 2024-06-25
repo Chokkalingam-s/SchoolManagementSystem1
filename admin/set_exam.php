@@ -70,7 +70,7 @@
 					
 					<label> Exam Date</label><br>
 					
-					<select name="da" class="input2">
+					<select name="da" class="input2" style="width: 33%;">
 						<option value="">Date</option>
 						<option value="1">1 </option>
 						<option value="2">2 </option>
@@ -104,7 +104,7 @@
 						<option value="30">30</option>
 						<option value="31">31</option>
 						</select>
-					<select name="mo" class="input2">
+					<select name="mo" class="input2" style="width: 33%;">
 						<option> Month</option>
 						<option value="01">Jan</option>
 						<option value="02">Feb</option>
@@ -119,7 +119,7 @@
 						<option value="11">Nov</option>
 						<option value="12">Dec</option>
 					</select>
-					<select name="ye" class="input2">
+					<select name="ye" class="input2" style="width: 33%;">
 						<option value="">Select Year</option>
 						<option value="2018">2018</option>
 						<option value="2017">2017</option>
@@ -153,7 +153,7 @@
 					
 					
 					<label>Class</label>
-					<select name="cla" required class="input3">
+					<select name="cla" required class="input2">
 						<?php
 							$sl="select DISTINCT(CNAME) from class";
 							$r=$db->query($sl);
@@ -174,7 +174,7 @@
 					
 					
 					<label>Subject</label><br>
-					<select name="sub" required class="input3">
+					<select name="sub" required class="input2">
 						<?php
 							$s="select * from sub";
 							$re=$db->query($s);
