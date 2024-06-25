@@ -13,10 +13,7 @@
                         <a class="nav-link" href="#">Teacher</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Student</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Settings</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
