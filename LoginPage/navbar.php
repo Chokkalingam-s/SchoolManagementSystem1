@@ -12,7 +12,7 @@
 					echo'
 				
 						<li class="nav-item"><a class="nav-link"href="index.php">Admin Home</a></li>
-				<li class="nav-item"> <a class="nav-link" href="#">Settings</a></li>
+				<li class="nav-item"> <a class="nav-link" href="pw_change.php">Settings</a></li>
 				<li class="nav-item"><a class="nav-link" href="../logout.php">Logout</a></li>
 					';
 				}
@@ -21,7 +21,7 @@
 					echo'
 				
 						<li class="nav-item"><a class="nav-link" href="index.php">Teacher Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+				<li class="nav-item"><a class="nav-link" href="pw_change.php">Settings</a></li>
 				<li class="nav-item"><a class="nav-link" href="../logout.php">Logout</a></li>
 					';
 				}
