@@ -32,11 +32,23 @@
     <div class="section">
 
         <h3 class="text">Welcome <?php echo $_SESSION["ANAME"]; ?></h3><hr><br>
+     
         <div class="content1">
-            
+        <div class="card-container">
+            <div class="info-card">
+                <div class="info-circle" id="studentCount">0</div>
+                <div class="info-text">Students</div>
+            </div>
+            <div class="info-card">
+                <div class="info-circle" id="staffCount">0</div>
+                <div class="info-text">Staff</div>
+            </div>
+        </div>
         </div>
        
     </div>
 </body>
 <script src="../js/closeAlert.js"></script>
+<script src="../js/countData.js"></script>
+
 </html>
