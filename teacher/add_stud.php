@@ -39,7 +39,7 @@
                     if(isset($_POST["submit"]))
                     {
                         $edate=$_POST["da"].'-'.$_POST["mo"].'-'.$_POST["ye"];
-                        $target="..images/student/";
+                        $target="../images/student/";
                         $target_file=$target.basename($_FILES["img"]["name"]);
                         if(move_uploaded_file($_FILES['img']['tmp_name'],$target_file))
                         {

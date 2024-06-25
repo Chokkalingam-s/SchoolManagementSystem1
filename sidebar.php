@@ -34,7 +34,7 @@
     <a href="handle_class.php" class="nav-button" ><i class="fas fa-users"></i><span>Handled Classes <span style="opacity:0%">...</span></span></a>
     <a href="add_stud.php" class="nav-button" ><i class="fas fa-user-check"></i><span>Students</span></a>
     <a href="view_stud.php" class="nav-button" ><i class="fas fa-user-graduate"></i><span>View Student</span></a>
-    <a href="tech_view_exam.php" class="nav-button" > <i class="fas fa-calendar-check"></i><span>View Exam</span></a>
+    <a href="view_exam.php" class="nav-button" > <i class="fas fa-calendar-check"></i><span>View Exam</span></a>
      <a href="add_mark.php" class="nav-button" ><i class="fas fa-file-signature"></i><span>Add Marks</span></a>
     <a href="view_mark.php" class="nav-button" ><i class="fas fa-chart-simple"></i><span>View Marks</span></a>
     <hr/>
