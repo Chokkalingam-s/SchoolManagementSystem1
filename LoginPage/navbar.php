@@ -6,15 +6,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Teacher</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
+                    <?php
+				if(isset($_SESSION["AID"]))
+				{
+					echo'
+				
+						<li class="nav-item"><a class="nav-link"href="index.php">Admin Home</a></li>
+				<li class="nav-item"> <a class="nav-link" href="#">Settings</a></li>
+				<li class="nav-item"><a class="nav-link" href="../logout.php">Logout</a></li>
+					';
+				}
+				elseif(isset($_SESSION["TID"]))
+				{
+					echo'
+				
+						<li class="nav-item"><a class="nav-link" href="index.php">Teacher Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="teacher_change_pass.php">Settings</a></li>
+				<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+					';
+				}
+				else{
+					echo'
+					
+					<li class="nav-item"><a class="nav-link" href="index.php">Admin</a></li>
+				<li class="nav-item"><a class="nav-link" href="teacher_login.php">Teacher</a></li>
+				<li class="nav-item"><a class="nav-link"  href="contact.php">Contact Us</a></li>';
+				}
+			?>
                 </ul>
             </div>
         </div>
